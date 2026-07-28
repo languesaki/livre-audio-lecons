@@ -2,10 +2,12 @@
 <html lang="fr">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Languesaki - Audio</title>
+<title>Languesaki Audio</title>
+
 
 <style>
 
@@ -17,101 +19,173 @@ body {
     padding: 20px;
 }
 
+
 .container {
+
     max-width: 500px;
     margin: auto;
     background: white;
     border-radius: 30px;
     padding: 25px;
+
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+
 }
+
+
+/* Logo de la marque */
 
 .logo {
-    width: 130px;
+
+    width: 110px;
+
 }
+
+
+/* Noiroux personnage principal */
 
 .noiroux {
+
     width: 280px;
     margin-top: 15px;
+
 }
+
 
 h1 {
+
     color: #333;
-    font-size: 30px;
+    font-size: 22px;
+    margin-top: 10px;
+
 }
+
 
 h2 {
+
     color: #555;
     font-size: 24px;
+
 }
+
+
+/* Bouton enfant */
 
 button {
+
     background: #ffb000;
     border: none;
+
     border-radius: 30px;
-    padding: 15px 30px;
+
+    padding: 15px 35px;
+
     font-size: 20px;
+
     cursor: pointer;
+
     margin-top: 20px;
+
 }
+
 
 button:hover {
+
     opacity: 0.85;
+
 }
+
+
 
 .message {
+
     font-size: 18px;
-    margin-top: 25px;
+
     line-height: 1.5;
+
+    margin-top: 25px;
+
 }
 
+
+
 </style>
+
 
 </head>
 
 
+
 <body>
+
 
 <div class="container">
 
+
+
 <img class="logo" src="assets/Logo.png">
+
 
 <img class="noiroux" src="assets/noiroux.png">
 
+
+
 <h1>Languesaki</h1>
 
-<h2 id="titre">Écoute avec Noiroux !</h2>
 
-<h2 id="audioTitle">🎵 Audio</h2>
+<h2 id="audioTitle">
+🎵 Audio
+</h2>
+
 
 
 <audio id="audioPlayer">
-    <source id="audioSource" type="audio/mpeg">
+
+<source id="audioSource" type="audio/mpeg">
+
 </audio>
 
 
+
 <button onclick="playAudio()" id="playButton">
+
 ▶ Écouter avec Noiroux
+
 </button>
 
 
+
 <p class="message">
+
 Bravo ! Écoute bien les sons et amuse-toi avec moi ! 🎵
+
 </p>
+
 
 
 </div>
 
 
+
+
 <script>
+
 
 const params = new URLSearchParams(window.location.search);
 
+
 const audio = params.get("audio");
+
 const title = params.get("title");
 
+
+
 const player = document.getElementById("audioPlayer");
+
 const button = document.getElementById("playButton");
+
+
+
 
 
 if(audio){
@@ -123,6 +197,8 @@ player.load();
 }
 
 
+
+
 if(title){
 
 document.getElementById("audioTitle").innerHTML = "🎵 " + title;
@@ -130,30 +206,44 @@ document.getElementById("audioTitle").innerHTML = "🎵 " + title;
 }
 
 
+
+
+
 function playAudio(){
+
 
 if(player.paused){
 
+
 player.play();
 
+
 button.innerHTML = "⏸ Pause avec Noiroux";
+
 
 }
 
 else{
 
+
 player.pause();
+
 
 button.innerHTML = "▶ Écouter avec Noiroux";
 
-}
 
 }
+
+
+}
+
 
 
 </script>
 
 
+
 </body>
+
 
 </html>
