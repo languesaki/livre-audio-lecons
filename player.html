@@ -21,7 +21,7 @@ body {
     max-width: 500px;
     margin: auto;
     background: white;
-    border-radius: 25px;
+    border-radius: 30px;
     padding: 25px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
@@ -32,29 +32,43 @@ body {
 
 .noiroux {
     width: 280px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 h1 {
     color: #333;
+    font-size: 30px;
 }
 
 h2 {
     color: #555;
+    font-size: 24px;
 }
 
-audio {
-    width: 100%;
+button {
+    background: #ffb000;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
     margin-top: 20px;
+}
+
+button:hover {
+    opacity: 0.85;
 }
 
 .message {
     font-size: 18px;
+    margin-top: 25px;
+    line-height: 1.5;
 }
 
 </style>
 
 </head>
+
 
 <body>
 
@@ -66,15 +80,25 @@ audio {
 
 <h1>Languesaki</h1>
 
-<h2 id="titre">🎵 Audio</h2>
+<h2 id="titre">Écoute avec Noiroux !</h2>
 
-<audio controls>
+<h2 id="audioTitle">🎵 Audio</h2>
+
+
+<audio id="audioPlayer">
     <source id="audioSource" type="audio/mpeg">
 </audio>
 
+
+<button onclick="playAudio()" id="playButton">
+▶ Écouter avec Noiroux
+</button>
+
+
 <p class="message">
-Bravo ! Écoute et amuse-toi avec Noiroux 🎵
+Bravo ! Écoute bien les sons et amuse-toi avec moi ! 🎵
 </p>
+
 
 </div>
 
@@ -86,16 +110,49 @@ const params = new URLSearchParams(window.location.search);
 const audio = params.get("audio");
 const title = params.get("title");
 
+const player = document.getElementById("audioPlayer");
+const button = document.getElementById("playButton");
+
+
 if(audio){
-    document.getElementById("audioSource").src = audio;
-    document.querySelector("audio").load();
+
+document.getElementById("audioSource").src = audio;
+
+player.load();
+
 }
+
 
 if(title){
-    document.getElementById("titre").innerHTML = "🎵 " + title;
+
+document.getElementById("audioTitle").innerHTML = "🎵 " + title;
+
 }
 
+
+function playAudio(){
+
+if(player.paused){
+
+player.play();
+
+button.innerHTML = "⏸ Pause avec Noiroux";
+
+}
+
+else{
+
+player.pause();
+
+button.innerHTML = "▶ Écouter avec Noiroux";
+
+}
+
+}
+
+
 </script>
+
 
 </body>
 
