@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Languesaki - Audio</title>
+
+<style>
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #fff8ef;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.logo {
+    width: 180px;
+}
+
+.noiroux {
+    width: 180px;
+    margin-top: 15px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.message {
+    font-size: 18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<img class="logo" src="assets/Log0_languesAki.png">
+
+<img class="noiroux" src="assets/noiroux.png">
+
+<h1>🦊 Languesaki</h1>
+
+<h2 id="titre">🎵 Audio</h2>
+
+<audio controls>
+    <source id="audioSource" type="audio/mpeg">
+</audio>
+
+<p class="message">
+Bravo ! Écoute et amuse-toi avec Noiroux 🎵
+</p>
+
+</div>
+
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const audio = params.get("audio");
+const title = params.get("title");
+
+if(audio){
+    document.getElementById("audioSource").src = audio;
+    document.querySelector("audio").load();
+}
+
+if(title){
+    document.getElementById("titre").innerHTML = "🎵 " + title;
+}
+
+</script>
+
+</body>
+
+</html>
