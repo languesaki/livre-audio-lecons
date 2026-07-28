@@ -6,8 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Languesaki Audio</title>
-
+<title>Languesaki - Audio</title>
 
 <style>
 
@@ -33,47 +32,44 @@ body {
 }
 
 
-/* Logo de la marque */
+/* Logo Languesaki */
 
 .logo {
 
     width: 110px;
+    margin-bottom: 10px;
 
 }
 
 
-/* Noiroux personnage principal */
+/* Noiroux */
 
 .noiroux {
 
     width: 280px;
-    margin-top: 15px;
-
-}
-
-
-h1 {
-
-    color: #333;
-    font-size: 22px;
+    max-width: 90%;
     margin-top: 10px;
 
 }
 
 
+/* Titre audio */
+
 h2 {
 
     color: #555;
     font-size: 24px;
+    margin-top: 20px;
 
 }
 
 
-/* Bouton enfant */
+/* Bouton d'écoute */
 
 button {
 
     background: #ffb000;
+
     border: none;
 
     border-radius: 30px;
@@ -96,6 +92,7 @@ button:hover {
 }
 
 
+/* Message */
 
 .message {
 
@@ -111,9 +108,7 @@ button:hover {
 
 </style>
 
-
 </head>
-
 
 
 <body>
@@ -122,15 +117,11 @@ button:hover {
 <div class="container">
 
 
-
 <img class="logo" src="assets/Logo.png">
 
 
 <img class="noiroux" src="assets/noiroux.png">
 
-
-
-<h1>Languesaki</h1>
 
 
 <h2 id="audioTitle">
@@ -147,7 +138,7 @@ button:hover {
 
 
 
-<button onclick="playAudio()" id="playButton">
+<button id="playButton" onclick="playAudio()">
 
 ▶ Écouter avec Noiroux
 
@@ -162,9 +153,7 @@ Bravo ! Écoute bien les sons et amuse-toi avec moi ! 🎵
 </p>
 
 
-
 </div>
-
 
 
 
@@ -179,61 +168,48 @@ const audio = params.get("audio");
 const title = params.get("title");
 
 
-
 const player = document.getElementById("audioPlayer");
 
 const button = document.getElementById("playButton");
 
 
 
+if (audio) {
 
+    document.getElementById("audioSource").src = audio;
 
-if(audio){
-
-document.getElementById("audioSource").src = audio;
-
-player.load();
+    player.load();
 
 }
 
 
 
+if (title) {
 
-if(title){
-
-document.getElementById("audioTitle").innerHTML = "🎵 " + title;
-
-}
-
-
-
-
-
-function playAudio(){
-
-
-if(player.paused){
-
-
-player.play();
-
-
-button.innerHTML = "⏸ Pause avec Noiroux";
-
+    document.getElementById("audioTitle").innerHTML = "🎵 " + title;
 
 }
 
-else{
 
 
-player.pause();
+function playAudio() {
 
 
-button.innerHTML = "▶ Écouter avec Noiroux";
+    if (player.paused) {
 
+        player.play();
 
-}
+        button.innerHTML = "⏸ Pause";
 
+    }
+
+    else {
+
+        player.pause();
+
+        button.innerHTML = "▶ Écouter avec Noiroux";
+
+    }
 
 }
 
@@ -242,8 +218,6 @@ button.innerHTML = "▶ Écouter avec Noiroux";
 </script>
 
 
-
 </body>
-
 
 </html>
