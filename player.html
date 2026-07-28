@@ -32,12 +32,12 @@ body {
 }
 
 
-/* Logo Languesaki */
+/* Logo */
 
 .logo {
 
     width: 110px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
 }
 
@@ -48,23 +48,35 @@ body {
 
     width: 280px;
     max-width: 90%;
-    margin-top: 10px;
+    margin: 10px auto 20px;
+
+}
+
+
+/* Message de Noiroux */
+
+.intro {
+
+    font-size: 20px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
 
 }
 
 
 /* Titre audio */
 
-h2 {
+.audio-title {
 
-    color: #555;
-    font-size: 24px;
-    margin-top: 20px;
+    font-size: 26px;
+    color: #333;
+    margin: 20px 0;
 
 }
 
 
-/* Bouton d'écoute */
+/* Bouton */
 
 button {
 
@@ -80,7 +92,7 @@ button {
 
     cursor: pointer;
 
-    margin-top: 20px;
+    margin-top: 10px;
 
 }
 
@@ -92,18 +104,15 @@ button:hover {
 }
 
 
-/* Message */
+/* Bravo */
 
-.message {
+.bravo {
 
-    font-size: 18px;
-
-    line-height: 1.5;
-
+    font-size: 22px;
     margin-top: 25px;
+    color: #333;
 
 }
-
 
 
 </style>
@@ -123,9 +132,18 @@ button:hover {
 <img class="noiroux" src="assets/noiroux.png">
 
 
+<p class="intro">
 
-<h2 id="audioTitle">
+Écoute bien et amuse-toi avec moi ! 🎵
+
+</p>
+
+
+
+<h2 class="audio-title" id="audioTitle">
+
 🎵 Audio
+
 </h2>
 
 
@@ -146,14 +164,15 @@ button:hover {
 
 
 
-<p class="message">
+<p class="bravo">
 
-Bravo ! Écoute bien les sons et amuse-toi avec moi ! 🎵
+Bravo !
 
 </p>
 
 
 </div>
+
 
 
 
@@ -174,7 +193,7 @@ const button = document.getElementById("playButton");
 
 
 
-if (audio) {
+if(audio){
 
     document.getElementById("audioSource").src = audio;
 
@@ -184,7 +203,7 @@ if (audio) {
 
 
 
-if (title) {
+if(title){
 
     document.getElementById("audioTitle").innerHTML = "🎵 " + title;
 
@@ -192,10 +211,11 @@ if (title) {
 
 
 
-function playAudio() {
+
+function playAudio(){
 
 
-    if (player.paused) {
+    if(player.paused){
 
         player.play();
 
@@ -203,13 +223,14 @@ function playAudio() {
 
     }
 
-    else {
+    else{
 
         player.pause();
 
         button.innerHTML = "▶ Écouter avec Noiroux";
 
     }
+
 
 }
 
