@@ -1,171 +1,127 @@
-[
-  {
-    "titre": "Volume 1 - 001 - Alphabet",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_001_Alphabet.mp3"
-  },
-  {
-    "titre": "Volume 1 - 002 - Comptine Alphabet Noiroux",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_002_Comptine_Alphabet_Noiroux.mp3"
-  },
-  {
-    "titre": "Volume 1 - 003 - Son A",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_003_Son_A.mp3"
-  },
-  {
-    "titre": "Volume 1 - 004 - Son I",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_004_Son_I.mp3"
-  },
-  {
-    "titre": "Volume 1 - 005 - Activité entendre Son A",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_005_Activite_Entendre_Son_A.mp3"
-  },
-  {
-    "titre": "Volume 1 - 006 - Activité entendre Son I",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_006_Activite_Entendre_Son_I.mp3"
-  },
-  {
-    "titre": "Volume 1 - 007 - Son E muet",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_007_Son_E_Muet.mp3"
-  },
-  {
-    "titre": "Volume 1 - 008 - Son O",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_008_Son_O.mp3"
-  },
-  {
-    "titre": "Volume 1 - 009 - Activité entendre Son E muet",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_009_Activite_Entendre_Son_E_Muet.mp3"
-  },
-  {
-    "titre": "Volume 1 - 010 - Activité entendre Son O",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_010_Activite_Entendre_Son_O.mp3"
-  },
-  {
-    "titre": "Volume 1 - 011 - Son U",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_011_Son_U.mp3"
-  },
-  {
-    "titre": "Volume 1 - 012 - Son E fermé",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_012_Son_E_Ferme.mp3"
-  },
-  {
-    "titre": "Volume 1 - 013 - Activité entendre Son U",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_013_Activite_Entendre_Son_U.mp3"
-  },
-  {
-    "titre": "Volume 1 - 014 - Activité entendre Son E fermé",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_014_Activite_Entendre_Son_E_Ferme.mp3"
-  }
-]
-{
-  "titre": "Volume 1 - 015 - Son L",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_015_Son_L.mp3"
-},
-{
-  "titre": "Volume 1 - 016 - Boîte à outils IL / IL Y A",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_016_Boite_Outils_IL_IL_Y_A.mp3"
-},
-{
-  "titre": "Volume 1 - 017 - Boîte à outils ELLE / ET",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_017_Boite_Outils_ELLE_ET.mp3"
-},
-{
-  "titre": "Volume 1 - 018 - Syllabes L",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_018_Syllabes_L.mp3"
-},
-{
-  "titre": "Volume 1 - 019 - Son M",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_019_Son_M.mp3"
-},
-{
-  "titre": "Volume 1 - 020 - Boîte à outils EST / UI",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_020_Boite_Outils_EST_UI.mp3"
-},
-{
-  "titre": "Volume 1 - 021 - Syllabes M",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_021_Syllabes_M.mp3"
-},
-{
-  "titre": "Volume 1 - 022 - Son R",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_022_Son_R.mp3"
-},
-{
-  "titre": "Volume 1 - 023 - Boîte à outils UN / UNE",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_023_Boite_Outils_UN_UNE.mp3"
-},
-{
-  "titre": "Volume 1 - 024 - Boîte à outils DU / DANS",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_024_Boite_Outils_DU_DANS.mp3"
-},
-{
-  "titre": "Volume 1 - 025 - Syllabes R",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_025_Syllabes_R.mp3"
-},
-{
-  "titre": "Volume 1 - 026 - Son V",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_026_Son_V.mp3"
-},
-{
-  "titre": "Volume 1 - 027 - Syllabes V",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_027_Syllabes_V.mp3"
-},
-{
-  "titre": "Volume 1 - 028 - Son OU",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_028_Son_OU.mp3"
-},
-{
-  "titre": "Volume 1 - 029 - Syllabes OU",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_029_Syllabes_OU.mp3"
-},
-{
-  "titre": "Volume 1 - 030 - Activité entendre Son OU",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_030_Activite_Entendre_Son_OU.mp3"
-},
-{
-  "titre": "Volume 1 - 031 - Son S (1)",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_031_Son_S_1.mp3"
-},
-{
-  "titre": "Volume 1 - 032 - Son S (2)",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_032_Son_S_2.mp3"
-},
-{
-  "titre": "Volume 1 - 033 - Son Z",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_033_Son_Z.mp3"
-},
-{
-  "titre": "Volume 1 - 034 - Syllabes S / Z",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_034_Syllabes_S_Z.mp3"
-},
-{
-  "titre": "Volume 1 - 035 - Syllabes S",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_035_Syllabes_S.mp3"
-},
-{
-  "titre": "Volume 1 - 036 - Syllabes CVV",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_036_Syllabes_CVV.mp3"
-},
-{
-  "titre": "Volume 1 - 037 - Syllabes CVC",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_037_Syllabes_CVC.mp3"
-},
-{
-  "titre": "Volume 1 - 038 - Son E ouvert / E grave / E circonflexe",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_038_Son_E_Ouvert_EGrave_ECirconflexe.mp3"
-},
-{
-  "titre": "Volume 1 - 039 - Boîte à outils MES / LES",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_039_Boite_Outils_MES_LES.mp3"
-},
-{
-  "titre": "Volume 1 - 040 - Boîte à outils C'EST / S'EST / CES / SES / MAIS",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_040_Boite_Outils_CEST_SEST_CES_SES_MAIS.mp3"
-},
-{
-  "titre": "Volume 1 - 041 - Syllabes E ouvert",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_041_Syllabes_E_Ouvert.mp3"
-},
-{
-  "titre": "Volume 1 - 042 - Activité entendre Son E ouvert",
-  "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_042_Activite_Entendre_Son_E_Ouvert.mp3"
-}
-]
+	
+0	
+titre	"Volume 1 - 001 - Alphabet"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_001_Alphabet.mp3"
+1	
+titre	"Volume 1 - 002 - Comptine Alphabet Noiroux"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_002_Comptine_Alphabet_Noiroux.mp3"
+2	
+titre	"Volume 1 - 003 - Son A"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_003_Son_A.mp3"
+3	
+titre	"Volume 1 - 004 - Son I"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_004_Son_I.mp3"
+4	
+titre	"Volume 1 - 005 - Activité entendre Son A"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_005_Activite_Entendre_Son_A.mp3"
+5	
+titre	"Volume 1 - 006 - Activité entendre Son I"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_006_Activite_Entendre_Son_I.mp3"
+6	
+titre	"Volume 1 - 007 - Son E muet"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_007_Son_E_Muet.mp3"
+7	
+titre	"Volume 1 - 008 - Son O"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_008_Son_O.mp3"
+8	
+titre	"Volume 1 - 009 - Activité entendre Son E muet"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_009_Activite_Entendre_Son_E_Muet.mp3"
+9	
+titre	"Volume 1 - 010 - Activité entendre Son O"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_010_Activite_Entendre_Son_O.mp3"
+10	
+titre	"Volume 1 - 011 - Son U"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_011_Son_U.mp3"
+11	
+titre	"Volume 1 - 012 - Son E fermé"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_012_Son_E_Ferme.mp3"
+12	
+titre	"Volume 1 - 013 - Activité entendre Son U"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_013_Activite_Entendre_Son_U.mp3"
+13	
+titre	"Volume 1 - 014 - Activité entendre Son E fermé"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_014_Activite_Entendre_Son_E_Ferme.mp3"
+14	
+titre	"Volume 1 - 015 - Son L"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_015_Son_L.mp3"
+15	
+titre	"Volume 1 - 016 - Boîte à outils IL / IL Y A"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_016_Boite_Outils_IL_IL_Y_A.mp3"
+16	
+titre	"Volume 1 - 017 - Boîte à outils ELLE / ET"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_017_Boite_Outils_ELLE_ET.mp3"
+17	
+titre	"Volume 1 - 018 - Syllabes L"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_018_Syllabes_L.mp3"
+18	
+titre	"Volume 1 - 019 - Son M"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_019_Son_M.mp3"
+19	
+titre	"Volume 1 - 020 - Boîte à outils EST / UI"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_020_Boite_Outils_EST_UI.mp3"
+20	
+titre	"Volume 1 - 021 - Syllabes M"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_021_Syllabes_M.mp3"
+21	
+titre	"Volume 1 - 022 - Son R"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_022_Son_R.mp3"
+22	
+titre	"Volume 1 - 023 - Boîte à outils UN / UNE"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_023_Boite_Outils_UN_UNE.mp3"
+23	
+titre	"Volume 1 - 024 - Boîte à outils DU / DANS"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_024_Boite_Outils_DU_DANS.mp3"
+24	
+titre	"Volume 1 - 025 - Syllabes R"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_025_Syllabes_R.mp3"
+25	
+titre	"Volume 1 - 026 - Son V"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_026_Son_V.mp3"
+26	
+titre	"Volume 1 - 027 - Syllabes V"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_027_Syllabes_V.mp3"
+27	
+titre	"Volume 1 - 028 - Son OU"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_028_Son_OU.mp3"
+28	
+titre	"Volume 1 - 029 - Syllabes OU"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_029_Syllabes_OU.mp3"
+29	
+titre	"Volume 1 - 030 - Activité entendre Son OU"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_030_Activite_Entendre_Son_OU.mp3"
+30	
+titre	"Volume 1 - 031 - Son S (1)"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_031_Son_S_1.mp3"
+31	
+titre	"Volume 1 - 032 - Son S (2)"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_032_Son_S_2.mp3"
+32	
+titre	"Volume 1 - 033 - Son Z"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_033_Son_Z.mp3"
+33	
+titre	"Volume 1 - 034 - Syllabes S / Z"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_034_Syllabes_S_Z.mp3"
+34	
+titre	"Volume 1 - 035 - Syllabes S"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_035_Syllabes_S.mp3"
+35	
+titre	"Volume 1 - 036 - Syllabes CVV"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_036_Syllabes_CVV.mp3"
+36	
+titre	"Volume 1 - 037 - Syllabes CVC"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_037_Syllabes_CVC.mp3"
+37	
+titre	"Volume 1 - 038 - Son E ouvert / E grave / E circonflexe"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_038_Son_E_Ouvert_EGrave_ECirconflexe.mp3"
+38	
+titre	"Volume 1 - 039 - Boîte à outils MES / LES"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_039_Boite_Outils_MES_LES.mp3"
+39	
+titre	"Volume 1 - 040 - Boîte à outils C'EST / S'EST / CES / SES / MAIS"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_040_Boite_Outils_CEST_SEST_CES_SES_MAIS.mp3"
+40	
+titre	"Volume 1 - 041 - Syllabes E ouvert"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_041_Syllabes_E_Ouvert.mp3"
+41	
+titre	"Volume 1 - 042 - Activité entendre Son E ouvert"
+url	"https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-1/V1_042_Activite_Entendre_Son_E_Ouvert.mp3"
