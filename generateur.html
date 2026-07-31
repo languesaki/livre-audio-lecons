@@ -127,21 +127,23 @@ if(texte=="Alphabet"){
 if(texte.startsWith("Son ")){
     let son = texte.replace("Son ","");
 
-    let phon={
-        "A":"a",
-        "I":"i",
-        "U":"y",
-        "O":"o",
-        "OU":"u",
-        "L":"l",
-        "M":"m",
-        "R":"ʁ",
-        "V":"v",
-        "Z":"z",
-        "S (1)":"s",
-        "S (2)":"z",
-        "E ouvert / E grave / E circonflexe":"ɛ"
-    };
+    let sons = {
+    "Son A":"[a]",
+    "Son I":"[i]",
+    "Son U":"[y]",
+    "Son O":"[o]",
+    "Son OU":"[u]",
+    "Son L":"[l]",
+    "Son M":"[m]",
+    "Son R":"[r]",
+    "Son V":"[v]",
+    "Son Z":"[z]",
+    "Son S (1)":"[s]",
+    "Son S (2)":"[z]",
+    "Son E muet":"[ə]",
+    "Son E fermé":"[e]",
+    "Son E ouvert / E grave / E circonflexe":"[ɛ]"
+};
 
     if(phon[son]){
         texte="Écoute le son ["+phon[son]+"]";
@@ -157,7 +159,7 @@ else if(texte.includes("Comptine")){
 
 // Activité
 else if(texte.includes("Activité")){
-    texte="Activité 🎯";
+    texte="Activité ✏️";
 }
 
 // Boîte à outils
