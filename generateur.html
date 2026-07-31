@@ -154,8 +154,16 @@ else if(texte.includes("Comptine")){
 }
 
 // Activité
-else if(texte.includes("Activité") || texte.includes("Activite")){
-    texte="Activité ✏️";
+// Boîte à outils
+else if(texte.includes("Boîte") || texte.includes("Boite")){
+    
+    let outil = texte
+        .replace("Boîte à outils ","")
+        .replace("Boite_Outils_","")
+        .replace("Boite à outils ","")
+        .replace("_"," / ");
+
+    texte="Boîte à outils : "+outil;
 }
 
 // Boîte à outils
