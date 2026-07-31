@@ -244,10 +244,10 @@ async function telechargerZIP(){
 
     for(let qr of listeQR){
 
-        let canvas=qr.element.querySelector("canvas");
+        let canvas = await html2canvas(qr.element);
 
-        let image=canvas.toDataURL("image/png")
-        .split(",")[1];
+let image = canvas.toDataURL("image/png")
+.split(",")[1];
 
 
         zip.file(
