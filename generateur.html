@@ -145,11 +145,7 @@ if(texte.startsWith("Son ")){
         "E ouvert / E grave / E circonflexe":"[ɛ]"
     };
 
-    if(sons[son]){
-        texte="Écoute le son "+sons[son];
-    } else {
-        texte="Écoute le son "+son;
-    }
+    texte="Écoute le son "+(sons[son] || son);
 }
 
 // Comptine
@@ -163,7 +159,7 @@ else if(texte.includes("Activité") || texte.includes("Activite")){
 }
 
 // Boîte à outils
-else if(texte.includes("Boîte")){
+else if(texte.includes("Boîte") || texte.includes("Boite")){
     texte="Boîte à outils 🧰";
 }
 
@@ -171,7 +167,6 @@ else if(texte.includes("Boîte")){
 else if(texte.includes("Syllabes")){
     texte="Lis les syllabes";
 }
-
 titre.innerHTML=texte;
 
 
