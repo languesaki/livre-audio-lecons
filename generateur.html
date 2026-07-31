@@ -95,7 +95,7 @@ async function creerQR(){
 
 
         let titre=document.createElement("p");
-        titre.innerHTML=item.titre;
+        let texte=item.affichage || item.titre;
 
 
         let qrDiv=document.createElement("div");
