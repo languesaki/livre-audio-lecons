@@ -154,21 +154,39 @@ else if(texte.includes("Comptine")){
 }
 
 // Activité
+else if(texte.includes("Activité") || texte.includes("Activite")){
+
+    let sonActivite = texte
+        .replace("Activité entendre Son ","")
+        .replace("Activite_Entendre_Son_","")
+        .replace("Activite entendre Son ","")
+        .trim();
+
+    let sonsActivite = {
+        "A":"[a]",
+        "I":"[i]",
+        "O":"[o]",
+        "U":"[y]",
+        "OU":"[u]",
+        "E muet":"[ə]",
+        "E fermé":"[e]",
+        "E ouvert":"[ɛ]"
+    };
+
+    texte="✏️ Entendre le son "+(sonsActivite[sonActivite] || sonActivite);
+}
+
+
 // Boîte à outils
 else if(texte.includes("Boîte") || texte.includes("Boite")){
-    
+
     let outil = texte
         .replace("Boîte à outils ","")
         .replace("Boite_Outils_","")
         .replace("Boite à outils ","")
-        .replace("_"," / ");
+        .replaceAll("_"," / ");
 
-    texte="Boîte à outils : "+outil;
-}
-
-// Boîte à outils
-else if(texte.includes("Boîte") || texte.includes("Boite")){
-    texte="Boîte à outils 🧰";
+    texte="Boîte à outils :<br>"+outil;
 }
 
 // Syllabes
