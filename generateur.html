@@ -100,6 +100,7 @@ titre.innerHTML=texte;
 
 
         let qrDiv=document.createElement("div");
+qrDiv.className="qrcode";
 
 
         new QRCode(qrDiv,{
@@ -109,18 +110,19 @@ titre.innerHTML=texte;
 });
 
 
-        bloc.appendChild(titre);
-        bloc.appendChild(qrDiv);
+    bloc.appendChild(titre);
+bloc.appendChild(qrDiv);
 
 
-        document.getElementById("qrs")
-        .appendChild(bloc);
+let scan=document.createElement("div");
+scan.className="scan";
+scan.innerHTML="Scanne-moi !";
+
+bloc.appendChild(scan);
 
 
-        listeQR.push({
-            titre:item.titre,
-            element:qrDiv
-        });
+document.getElementById("qrs")
+.appendChild(bloc);
 
 
     });
