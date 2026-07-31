@@ -128,27 +128,28 @@ if(texte.startsWith("Son ")){
     let son = texte.replace("Son ","");
 
     let sons = {
-    "Son A":"[a]",
-    "Son I":"[i]",
-    "Son U":"[y]",
-    "Son O":"[o]",
-    "Son OU":"[u]",
-    "Son L":"[l]",
-    "Son M":"[m]",
-    "Son R":"[r]",
-    "Son V":"[v]",
-    "Son Z":"[z]",
-    "Son S (1)":"[s]",
-    "Son S (2)":"[z]",
-    "Son E muet":"[ə]",
-    "Son E fermé":"[e]",
-    "Son E ouvert / E grave / E circonflexe":"[ɛ]"
-};
+        "A":"[a]",
+        "I":"[i]",
+        "U":"[y]",
+        "O":"[o]",
+        "OU":"[u]",
+        "L":"[l]",
+        "M":"[m]",
+        "R":"[r]",
+        "V":"[v]",
+        "Z":"[z]",
+        "S (1)":"[s]",
+        "S (2)":"[z]",
+        "E muet":"[ə]",
+        "E fermé":"[e]",
+        "E ouvert / E grave / E circonflexe":"[ɛ]"
+    };
 
     if(sons[son]){
-    texte="Écoute le son "+sons[son];
-} else {
-    texte="Écoute le son "+son;
+        texte="Écoute le son "+sons[son];
+    } else {
+        texte="Écoute le son "+son;
+    }
 }
 
 // Comptine
@@ -157,7 +158,7 @@ else if(texte.includes("Comptine")){
 }
 
 // Activité
-else if(texte.includes("Activité")){
+else if(texte.includes("Activité") || texte.includes("Activite")){
     texte="Activité ✏️";
 }
 
@@ -194,7 +195,10 @@ scan.className="scan";
 scan.innerHTML="Scanne-moi !";
 
 bloc.appendChild(scan);
-
+listeQR.push({
+    titre:item.titre,
+    element:qrDiv
+});
 
 document.getElementById("qrs")
 .appendChild(bloc);
