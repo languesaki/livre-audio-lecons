@@ -120,7 +120,9 @@ let texte=item.titre;
 
 // Supprime "Volume 1 - 001 - "
 texte = texte.replace(/^Volume \d+ - \d+ - /,"");
-
+if(texte=="Alphabet"){
+    texte="Alphabet";
+}
 // Sons
 if(texte.startsWith("Son ")){
     let son = texte.replace("Son ","");
