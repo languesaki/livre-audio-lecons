@@ -145,11 +145,10 @@ if(texte.startsWith("Son ")){
     "Son E ouvert / E grave / E circonflexe":"[ɛ]"
 };
 
-    if(phon[son]){
-        texte="Écoute le son ["+phon[son]+"]";
-    } else {
-        texte="Écoute le son "+son;
-    }
+    if(sons[son]){
+    texte="Écoute le son "+sons[son];
+} else {
+    texte="Écoute le son "+son;
 }
 
 // Comptine
