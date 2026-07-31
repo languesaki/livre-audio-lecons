@@ -115,7 +115,59 @@ async function creerQR(){
 
 
         let titre=document.createElement("p");
-let texte=item.affichage || item.titre;
+
+let texte=item.titre;
+
+// Supprime "Volume 1 - 001 - "
+texte = texte.replace(/^Volume \d+ - \d+ - /,"");
+
+// Sons
+if(texte.startsWith("Son ")){
+    let son = texte.replace("Son ","");
+
+    let phon={
+        "A":"a",
+        "I":"i",
+        "U":"y",
+        "O":"o",
+        "OU":"u",
+        "L":"l",
+        "M":"m",
+        "R":"ʁ",
+        "V":"v",
+        "Z":"z",
+        "S (1)":"s",
+        "S (2)":"z",
+        "E ouvert / E grave / E circonflexe":"ɛ"
+    };
+
+    if(phon[son]){
+        texte="Écoute le son ["+phon[son]+"]";
+    } else {
+        texte="Écoute le son "+son;
+    }
+}
+
+// Comptine
+else if(texte.includes("Comptine")){
+    texte="Écoute la comptine 🎵";
+}
+
+// Activité
+else if(texte.includes("Activité")){
+    texte="Activité 🎯";
+}
+
+// Boîte à outils
+else if(texte.includes("Boîte")){
+    texte="Boîte à outils 🧰";
+}
+
+// Syllabes
+else if(texte.includes("Syllabes")){
+    texte="Lis les syllabes";
+}
+
 titre.innerHTML=texte;
 
 
