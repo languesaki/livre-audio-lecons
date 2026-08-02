@@ -139,13 +139,13 @@ let sons = {
 "P":"[p]",
 "K":"[k]",
 
-"O nasal ON / OM":"[ɔ̃]",
+"O nasal ON OM":"[ɔ̃]",
 
-"E fermé ER / EZ":"[e]",
+"E fermé ER EZ":"[e]",
 
 "E ouvert ET":"[ɛ]",
 
-"E ouvert EL / EC / ES / ER":"[ɛ]"
+"E ouvert EL EC ES ER":"[ɛ]"
 
 };
 
@@ -191,7 +191,7 @@ let sonsActivite = {
 
 };
 
-texte="✏️ Entendre le son "+(activites[son] || son);
+texte="✏️ Entendre le son "+(sonsActivite[son] || son);
 
 
 }
@@ -211,16 +211,16 @@ texte="Lis les syllabes";
 else if(texte.includes("Boîte") || texte.includes("Boite")){
 
     let outil = texte
-        .replace(/Boîte à outils\s*/i,"")
-        .replace(/Boîte Outils\s*/i,"")
-        .replace(/Boite_Outils_/i,"")
-        .replace(/Boite Outils\s*/i,"")
+        .replace("Boîte Outils ","")
+        .replace("Boîte à outils ","")
+        .replace("Boite_Outils_","")
         .replace(/_/g," ")
         .trim();
 
     texte="Boîte à outils :<br>"+outil;
 
 }
+
 
 
 
@@ -319,7 +319,7 @@ type:"blob"
 });
 
 
-saveAs(contenu,"QR_Languesaki_Volume_4.zip");
+saveAs(contenu,"QR_Languesaki_Volume_2.zip");
 
 
 }
