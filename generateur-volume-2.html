@@ -126,7 +126,7 @@ if(texte.startsWith("Son ")){
 let son=texte.replace("Son ","");
 
 
-let sons={
+let sons = {
 
 "T":"[t]",
 "CH":"[ʃ]",
@@ -137,17 +137,13 @@ let sons={
 "P":"[p]",
 "K":"[k]",
 
-"O_Nasal_ON_OM":"[ɔ̃]",
-"O nasal ON OM":"[ɔ̃]",
+"O nasal ON / OM":"[ɔ̃]",
 
-"E_fermé_ER_EZ":"[e]",
-"E fermé ER EZ":"[e]",
+"E fermé ER / EZ":"[e]",
 
-"E_ouvert_ET":"[ɛ]",
 "E ouvert ET":"[ɛ]",
 
-"E_ouvert_EL_EC_ES_ER":"[ɛ]",
-"E ouvert EL EC ES ER":"[ɛ]"
+"E ouvert EL / EC / ES / ER":"[ɛ]"
 
 };
 
@@ -172,7 +168,7 @@ let son=texte
 .trim();
 
 
-let activites={
+let sonsActivite = {
 
 "A":"[a]",
 "I":"[i]",
@@ -180,23 +176,18 @@ let activites={
 "U":"[y]",
 "OU":"[u]",
 
-"E_muet":"[ə]",
 "E muet":"[ə]",
-
-"E_fermé":"[e]",
 "E fermé":"[e]",
-
-"E_ouvert":"[ɛ]",
 "E ouvert":"[ɛ]",
 
 "O_Nasal":"[ɔ̃]",
 "O_Nasal_ON_OM":"[ɔ̃]",
+"O nasal":"[ɔ̃]",
 
 "K":"[k]",
 "S":"[s]"
 
 };
-
 
 texte="✏️ Entendre le son "+(activites[son] || son);
 
@@ -214,17 +205,19 @@ texte="Lis les syllabes";
 
 
 
+// Boîte à outils
 else if(texte.includes("Boîte") || texte.includes("Boite")){
 
+    let outil = texte
+        .replace("Boîte à outils ","")
+        .replace("Boîte à outils_","")
+        .replace("Boite à outils ","")
+        .replace("Boite_Outils_","")
+        .replace("Boite_Outils ","")
+        .replace(/_/g," ")
+        .trim();
 
-let outil=texte
-.replace("Boîte à outils ","")
-.replace("Boite_Outils_","")
-.replace(/_/g," / ");
-
-
-texte="Boîte à outils :<br>"+outil;
-
+    texte="Boîte à outils :<br>"+outil;
 
 }
 
