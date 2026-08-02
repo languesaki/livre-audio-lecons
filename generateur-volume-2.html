@@ -17,10 +17,6 @@ text-align:center;
 padding:30px;
 }
 
-h1{
-color:#333;
-}
-
 button{
 background:#f28c28;
 color:white;
@@ -30,10 +26,6 @@ margin:10px;
 border-radius:10px;
 font-size:16px;
 cursor:pointer;
-}
-
-button:hover{
-opacity:0.8;
 }
 
 #qrs{
@@ -77,14 +69,11 @@ font-weight:bold;
 
 <body>
 
-<h1>🦊 Générateur QR Languesaki</h1>
+<h1>🦊 Générateur QR Languesaki Volume 2</h1>
 
-<p>
-Créez automatiquement les QR codes des fichiers audio.
-</p>
+<p>Créez automatiquement les QR codes des fichiers audio.</p>
 
 <button onclick="creerQR()">Créer les QR</button>
-
 <button onclick="telechargerZIP()">Télécharger tous les QR</button>
 
 <div id="qrs"></div>
@@ -117,18 +106,16 @@ bloc.className="qr";
 let titre=document.createElement("p");
 
 
-let texte=item.titre;
+let texte=item.titre.replace(/^Volume \d+ - \d+ - /,"");
 
-
-texte=texte.replace(/^Volume \d+ - \d+ - /,"");
 
 
 if(texte.startsWith("Son ")){
 
-let son=texte.replace("Son ","");
+let son=texte.replace("Son ","").trim();
 
 
-let sons = {
+let sons={
 
 "T":"[t]",
 "CH":"[ʃ]",
@@ -150,16 +137,14 @@ let sons = {
 };
 
 
-let phon=sons[son] || son;
+texte="Écoute le son "+(sons[son] || son);
 
-if(phon.includes("/")){
-    texte="Écoute le son<br><br>"+phon;
-}else{
-    texte="Écoute le son "+phon;
-}
 
 }
-  else if(texte.includes("Activite") || texte.includes("Activité")){
+
+
+
+else if(texte.includes("Activité") || texte.includes("Activite")){
 
 
 let son=texte
@@ -170,26 +155,27 @@ let son=texte
 .trim();
 
 
-let sonsActivite = {
+let sonsActivite={
 
-    "A":"[a]",
-    "I":"[i]",
-    "O":"[o]",
-    "U":"[y]",
-    "OU":"[u]",
+"A":"[a]",
+"I":"[i]",
+"O":"[o]",
+"U":"[y]",
+"OU":"[u]",
 
-    "E muet":"[ə]",
-    "E fermé":"[e]",
-    "E ouvert":"[ɛ]",
+"E muet":"[ə]",
+"E fermé":"[e]",
+"E ouvert":"[ɛ]",
 
-    "O_Nasal":"[ɔ̃]",
-    "O_Nasal_ON_OM":"[ɔ̃]",
-    "O nasal":"[ɔ̃]",
+"O_Nasal":"[ɔ̃]",
+"O_Nasal_ON_OM":"[ɔ̃]",
+"O nasal":"[ɔ̃]",
 
-    "K":"[k]",
-    "S":"[s]"
+"K":"[k]",
+"S":"[s]"
 
 };
+
 
 texte="✏️ Entendre le son "+(sonsActivite[son] || son);
 
@@ -202,31 +188,29 @@ else if(texte.includes("Syllabes")){
 
 texte="Lis les syllabes";
 
-
 }
 
 
 
-// Boîte à outils
 else if(texte.includes("Boîte") || texte.includes("Boite")){
 
-    let outil = texte
-        .replace("Boîte Outils ","")
-        .replace("Boîte à outils ","")
-        .replace("Boite_Outils_","")
-        .replace(/_/g," ")
-        .trim();
 
-    texte="Boîte à outils :<br>"+outil;
+let outil=texte
+.replace("Boîte Outils ","")
+.replace("Boîte à outils ","")
+.replace("Boite_Outils_","")
+.replace(/_/g," ")
+.trim();
+
+
+texte="Boîte à outils :<br>"+outil;
+
 
 }
-
-
 
 
 
 titre.innerHTML=texte;
-
 
 
 let qrDiv=document.createElement("div");
@@ -250,17 +234,13 @@ bloc.appendChild(qrDiv);
 bloc.appendChild(scan);
 
 
-
 listeQR.push({
-
 titre:item.titre,
 element:bloc
-
 });
 
 
-document.getElementById("qrs")
-.appendChild(bloc);
+document.getElementById("qrs").appendChild(bloc);
 
 
 });
@@ -270,52 +250,37 @@ document.getElementById("qrs")
 
 
 
-
 async function telechargerZIP(){
 
-
 if(listeQR.length===0){
-
 alert("Créez d'abord les QR codes.");
-
 return;
-
 }
 
 
 let zip=new JSZip();
 
 
-
 for(let qr of listeQR){
 
-
 let canvas=await html2canvas(qr.element);
-
 
 let image=canvas.toDataURL("image/png")
 .split(",")[1];
 
 
 zip.file(
-
 qr.titre.replace(/[^a-z0-9]/gi,"_")+".png",
-
 image,
-
 {base64:true}
-
 );
 
 
 }
 
 
-
 let contenu=await zip.generateAsync({
-
 type:"blob"
-
 });
 
 
@@ -324,9 +289,7 @@ saveAs(contenu,"QR_Languesaki_Volume_2.zip");
 
 }
 
-
 </script>
-
 
 </body>
 </html>
