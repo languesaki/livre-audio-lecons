@@ -128,19 +128,17 @@ if(texte.startsWith("Son ")){
     let son = texte.replace("Son ","");
 
     let sons = {
-        "T":"[t]",
-"CH":"[ʃ]",
-"N":"[n]",
-"B":"[b]",
-"D":"[d]",
-"H":"[h]",
-"P":"[p]",
-"K":"[k]",
-"O nasal ON / OM":"[ɔ̃]",
-"E fermé ER / EZ":"[e]",
-"E ouvert ET":"[ɛ]",
-"E ouvert EL / EC / ES / ER":"[ɛ]"
-    };
+    "A nasal AN EN AM EM":"[ɑ̃]",
+    "F PH":"[f]",
+    "J":"[ʒ]",
+    "G":"[g]",
+    "E ouvert AI EI":"[ɛ]",
+    "O AU EAU":"[o]",
+    "GN":"[ɲ]",
+    "W":"[w]",
+    "W OI":"[wa]",
+    "WIN OIN OUIN":"[wɛ̃]"
+};
 
     texte="Écoute le son "+(sons[son] || son);
 }
@@ -154,12 +152,14 @@ else if(texte.includes("Comptine")){
 // Activité
 else if(texte.includes("Activité") || texte.includes("Activite")){
 
-    let sonActivite = texte
-        .replace("Activité Entendre Son ","")
-        .replace("Activité entendre Son ","")
-        .replace("Activite_Entendre_Son_","")
-        .replace("Activite_Entendre_Son ","")
-        .trim();
+    let sonsActivite = {
+    "A_Nasal":"[ɑ̃]",
+    "A nasal":"[ɑ̃]",
+    "O_AU_EAU":"[o]",
+    "O AU EAU":"[o]",
+    "GN":"[ɲ]",
+    "W":"[w]"
+};
 
     let sonsActivite = {
     "A":"[a]",
