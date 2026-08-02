@@ -209,11 +209,8 @@ texte="Lis les syllabes";
 else if(texte.includes("Boîte") || texte.includes("Boite")){
 
     let outil = texte
-        .replace("Boîte à outils ","")
-        .replace("Boîte à outils_","")
-        .replace("Boite à outils ","")
-        .replace("Boite_Outils_","")
-        .replace("Boite_Outils ","")
+        .replace(/Boîte à outils\s*/i,"")
+        .replace(/Boite[_ ]Outils[_ ]?/i,"")
         .replace(/_/g," ")
         .trim();
 
