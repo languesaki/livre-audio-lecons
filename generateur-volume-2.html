@@ -151,12 +151,14 @@ else if(texte.includes("Comptine")){
 }
 
 // Activité
+// Activité
 else if(texte.includes("Activité") || texte.includes("Activite")){
 
     let sonActivite = texte
+        .replace("Activité Entendre Son ","")
         .replace("Activité entendre Son ","")
         .replace("Activite_Entendre_Son_","")
-        .replace("Activite entendre Son ","")
+        .replace("Activite_Entendre_Son ","")
         .trim();
 
     let sonsActivite = {
@@ -167,10 +169,16 @@ else if(texte.includes("Activité") || texte.includes("Activite")){
         "OU":"[u]",
         "E muet":"[ə]",
         "E fermé":"[e]",
-        "E ouvert":"[ɛ]"
+        "E ouvert":"[ɛ]",
+        "O_Nasal":"[ɔ̃]",
+        "O_Nasal_ON":"[ɔ̃]",
+        "O_Nasal_ON_OM":"[ɔ̃]",
+        "K":"[k]",
+        "S":"[s]"
     };
 
     texte="✏️ Entendre le son "+(sonsActivite[sonActivite] || sonActivite);
+
 }
 
 
