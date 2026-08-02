@@ -128,19 +128,17 @@ if(texte.startsWith("Son ")){
     let son = texte.replace("Son ","");
 
     let sons = {
-        "T":"[t]",
-"CH":"[ʃ]",
-"N":"[n]",
-"B":"[b]",
-"D":"[d]",
-"H":"[h]",
-"P":"[p]",
-"K":"[k]",
-"O nasal ON / OM":"[ɔ̃]",
-"E fermé ER / EZ":"[e]",
-"E ouvert ET":"[ɛ]",
-"E ouvert EL / EC / ES / ER":"[ɛ]"
-    };
+    "A nasal AN EN AM EM":"[ɑ̃]",
+    "F PH":"[f]",
+    "J":"[ʒ]",
+    "G":"[g]",
+    "E ouvert AI EI":"[ɛ]",
+    "O AU EAU":"[o]",
+    "GN":"[ɲ]",
+    "W":"[w]",
+    "W OI":"[wa]",
+    "WIN OIN OUIN":"[wɛ̃]"
+};
 
     texte="Écoute le son "+(sons[son] || son);
 }
@@ -162,19 +160,10 @@ else if(texte.includes("Activité") || texte.includes("Activite")){
         .trim();
 
     let sonsActivite = {
-    "A":"[a]",
-    "I":"[i]",
-    "O":"[o]",
-    "U":"[y]",
-    "OU":"[u]",
-    "E muet":"[ə]",
-    "E fermé":"[e]",
-    "E ouvert":"[ɛ]",
-    "O_Nasal":"[ɔ̃]",
-    "O_Nasal_ON_OM":"[ɔ̃]",
-    "O nasal":"[ɔ̃]",
-    "K":"[k]",
-    "S":"[s]"
+    "A nasal":"[ɑ̃]",
+    "O AU EAU":"[o]",
+    "GN":"[ɲ]",
+    "W":"[w]"
 };
 
     texte="✏️ Entendre le son "+(sonsActivite[sonActivite] || sonActivite);
