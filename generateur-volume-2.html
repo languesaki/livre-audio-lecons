@@ -101,8 +101,10 @@ document.getElementById("qrs").innerHTML="";
 listeQR=[];
 
 
-const reponse=await fetch("titres-volume-2.json");
-const donnees=await reponse.json();
+const reponse = await fetch("titres-volume-2.json");
+const donnees = await reponse.json();
+
+console.log("Nombre d'audios chargés :", donnees.length);
 
 
 donnees.forEach(item=>{
@@ -170,22 +172,22 @@ let son=texte
 
 let sonsActivite = {
 
-"A":"[a]",
-"I":"[i]",
-"O":"[o]",
-"U":"[y]",
-"OU":"[u]",
+    "A":"[a]",
+    "I":"[i]",
+    "O":"[o]",
+    "U":"[y]",
+    "OU":"[u]",
 
-"E muet":"[ə]",
-"E fermé":"[e]",
-"E ouvert":"[ɛ]",
+    "E muet":"[ə]",
+    "E fermé":"[e]",
+    "E ouvert":"[ɛ]",
 
-"O_Nasal":"[ɔ̃]",
-"O_Nasal_ON_OM":"[ɔ̃]",
-"O nasal":"[ɔ̃]",
+    "O_Nasal":"[ɔ̃]",
+    "O_Nasal_ON_OM":"[ɔ̃]",
+    "O nasal":"[ɔ̃]",
 
-"K":"[k]",
-"S":"[s]"
+    "K":"[k]",
+    "S":"[s]"
 
 };
 
@@ -210,13 +212,16 @@ else if(texte.includes("Boîte") || texte.includes("Boite")){
 
     let outil = texte
         .replace(/Boîte à outils\s*/i,"")
-        .replace(/Boite[_ ]Outils[_ ]?/i,"")
+        .replace(/Boîte Outils\s*/i,"")
+        .replace(/Boite_Outils_/i,"")
+        .replace(/Boite Outils\s*/i,"")
         .replace(/_/g," ")
         .trim();
 
     texte="Boîte à outils :<br>"+outil;
 
 }
+
 
 
 
