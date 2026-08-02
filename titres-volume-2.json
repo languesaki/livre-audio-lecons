@@ -1,114 +1,41 @@
 [
- {
+  {
     "titre": "Volume 2 - 001 - Son T",
-    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_001_Son_T.mp3&title=Son%20T"
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_001_Son_T.mp3"
   },
   {
-    "titre": "Volume 2 - 002 - Boîte à outils TES / DES",
-    "url": "Audios-Version-1/Volume-2/V2_002_Boite_Outils_TES_DES.mp3"
+    "titre": "Volume 2 - 002 - Boîte Outils TES DES",
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_002_Boite_Outils_TES_DES.mp3"
   },
   {
-    "titre": "Volume 2 - 003 - Boîte à outils TRÈS / AUSSI",
-    "url": "Audios-Version-1/Volume-2/V2_003_Boite_Outils_TRES_AUSSI.mp3"
+    "titre": "Volume 2 - 003 - Boîte Outils TRES AUSSI",
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_003_Boite_Outils_TRES_AUSSI.mp3"
   },
   {
     "titre": "Volume 2 - 004 - Syllabes T",
-    "url": "Audios-Version-1/Volume-2/V2_004_Syllabes_T.mp3"
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_004_Syllabes_T.mp3"
   },
   {
-    "titre": "Volume 2 - 005 - Boîte à outils AU / CET / CETTE",
-    "url": "Audios-Version-1/Volume-2/V2_005_Boite_Outils_AU_CET_CETTE.mp3"
+    "titre": "Volume 2 - 005 - Boîte Outils AU CET CETTE",
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_005_Boite_Outils_AU_CET_CETTE.mp3"
   },
   {
     "titre": "Volume 2 - 006 - Son CH",
-    "url": "Audios-Version-1/Volume-2/V2_006_Son_CH.mp3"
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_006_Son_CH.mp3"
   },
   {
     "titre": "Volume 2 - 007 - Syllabes CH",
-    "url": "Audios-Version-1/Volume-2/V2_007_Syllabes_CH.mp3"
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_007_Syllabes_CH.mp3"
   },
   {
     "titre": "Volume 2 - 008 - Son N",
-    "url": "Audios-Version-1/Volume-2/V2_008_Son_N.mp3"
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_008_Son_N.mp3"
   },
   {
     "titre": "Volume 2 - 009 - Syllabes N",
-    "url": "Audios-Version-1/Volume-2/V2_009_Syllabes_N.mp3"
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_009_Syllabes_N.mp3"
   },
   {
     "titre": "Volume 2 - 010 - Son B",
-    "url": "Audios-Version-1/Volume-2/V2_010_Son_B.mp3"
-  },
-  {
-    "titre": "Volume 2 - 011 - Syllabes B",
-    "url": "Audios-Version-1/Volume-2/V2_011_Syllabes_B.mp3"
-  },
-  {
-    "titre": "Volume 2 - 012 - Son D",
-    "url": "Audios-Version-1/Volume-2/V2_012_Son_D.mp3"
-  },
-  {
-    "titre": "Volume 2 - 013 - Son H",
-    "url": "Audios-Version-1/Volume-2/V2_013_Son_H.mp3"
-  },
-  {
-    "titre": "Volume 2 - 014 - Syllabes D / H",
-    "url": "Audios-Version-1/Volume-2/V2_014_Syllabes_D_H.mp3"
-  },
-  {
-    "titre": "Volume 2 - 015 - Son O nasal ON / OM",
-    "url": "Audios-Version-1/Volume-2/V2_015_Son_O_Nasal_ON_OM.mp3"
-  },
-  {
-    "titre": "Volume 2 - 016 - Syllabes ON / OM",
-    "url": "Audios-Version-1/Volume-2/V2_016_Syllabes_O_Nasal_ON_OM.mp3"
-  },
-  {
-    "titre": "Volume 2 - 017 - Activité Entendre Son O nasal",
-    "url": "Audios-Version-1/Volume-2/V2_017_Activite_Entendre_Son_O_Nasal.mp3"
-  },
-  {
-    "titre": "Volume 2 - 018 - Son P",
-    "url": "Audios-Version-1/Volume-2/V2_018_Son_P.mp3"
-  },
-  {
-    "titre": "Volume 2 - 019 - Boîte à outils PUIS / AVEC",
-    "url": "Audios-Version-1/Volume-2/V2_019_Boite_Outils_PUIS_AVEC.mp3"
-  },
-  {
-    "titre": "Volume 2 - 020 - Syllabes P",
-    "url": "Audios-Version-1/Volume-2/V2_020_Syllabes_P.mp3"
-  },
-  {
-    "titre": "Volume 2 - 021 - Son E fermé ER / EZ",
-    "url": "Audios-Version-1/Volume-2/V2_021_Son_E_Ferme_ER_EZ.mp3"
-  },
-  {
-    "titre": "Volume 2 - 022 - Son E ouvert ET",
-    "url": "Audios-Version-1/Volume-2/V2_022_Son_E_Ouvert_ET.mp3"
-  },
-  {
-    "titre": "Volume 2 - 023 - Son E ouvert EL / EC / ES / ER",
-    "url": "Audios-Version-1/Volume-2/V2_023_Son_E_Ouvert_EL_EC_ES_ER.mp3"
-  },
-  {
-    "titre": "Volume 2 - 024 - Son K",
-    "url": "Audios-Version-1/Volume-2/V2_024_Son_K.mp3"
-  },
-  {
-    "titre": "Volume 2 - 025 - Syllabes K 1",
-    "url": "Audios-Version-1/Volume-2/V2_025_Syllabes_K_1.mp3"
-  },
-  {
-    "titre": "Volume 2 - 026 - Syllabes K 2",
-    "url": "Audios-Version-1/Volume-2/V2_026_Syllabes_K_2.mp3"
-  },
-  {
-    "titre": "Volume 2 - 027 - Activité Entendre Son K",
-    "url": "Audios-Version-1/Volume-2/V2_027_Activite_Entendre_Son_K.mp3"
-  },
-  {
-    "titre": "Volume 2 - 028 - Activité Entendre Son S",
-    "url": "Audios-Version-1/Volume-2/V2_028_Activite_Entendre_Son_S.mp3"
+    "url": "https://languesaki.github.io/livre-audio-lecons/player.html?audio=Audios-Version-1/Volume-2/V2_010_Son_B.mp3"
   }
-]
