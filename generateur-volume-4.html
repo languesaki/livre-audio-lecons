@@ -170,7 +170,13 @@ let sons={
 };
 
 
-texte="Écoute le son "+(sons[son] || son);
+let phon=sons[son] || son;
+
+if(phon.includes("/")){
+    texte="Écoute le son<br><br>"+phon;
+}else{
+    texte="Écoute le son "+phon;
+}
 
 }
   else if(texte.includes("Activite") || texte.includes("Activité")){
