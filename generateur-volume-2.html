@@ -128,21 +128,18 @@ if(texte.startsWith("Son ")){
     let son = texte.replace("Son ","");
 
     let sons = {
-        "A":"[a]",
-        "I":"[i]",
-        "U":"[y]",
-        "O":"[o]",
-        "OU":"[u]",
-        "L":"[l]",
-        "M":"[m]",
-        "R":"[r]",
-        "V":"[v]",
-        "Z":"[z]",
-        "S (1)":"[s]",
-        "S (2)":"[z]",
-        "E muet":"[ə]",
-        "E fermé":"[e]",
-        "E ouvert / E grave / E circonflexe":"[ɛ]"
+        "T":"[t]",
+"CH":"[ʃ]",
+"N":"[n]",
+"B":"[b]",
+"D":"[d]",
+"H":"[h]",
+"P":"[p]",
+"K":"[k]",
+"O nasal ON / OM":"[ɔ̃]",
+"E fermé ER / EZ":"[e]",
+"E ouvert ET":"[ɛ]",
+"E ouvert EL / EC / ES / ER":"[ɛ]"
     };
 
     texte="Écoute le son "+(sons[son] || son);
