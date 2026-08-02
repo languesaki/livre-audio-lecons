@@ -1,1 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Générateur QR Languesaki Volume 2</title>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f8f1e5;
+text-align:center;
+padding:30px;
+}
+
+h1{
+color:#333;
+}
+
+button{
+background:#f28c28;
+color:white;
+border:none;
+padding:12px 25px;
+margin:10px;
+border-radius:10px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.8;
+}
+
+#qrs{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.qr{
+width:190px;
+padding:15px;
+border-radius:18px;
+background:linear-gradient(180deg,#4FA3FF,#F28C28);
+color:white;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.qr p{
+font-size:18px;
+font-weight:bold;
+}
+
+.qrcode{
+background:white;
+padding:10px;
+width:120px;
+height:120px;
+margin:auto;
+border-radius:12px;
+}
+
+.scan{
+margin-top:12px;
+font-weight:bold;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🦊 Générateur QR Languesaki</h1>
+
+<p>
+Créez automatiquement les QR codes des fichiers audio.
+</p>
+
+<button onclick="creerQR()">Créer les QR</button>
+
+<button onclick="telechargerZIP()">Télécharger tous les QR</button>
+
+<div id="qrs"></div>
+
+
+<script>
+
+let listeQR=[];
+
+
+async function creerQR(){
+
+document.getElementById("qrs").innerHTML="";
+listeQR=[];
+
+
+const reponse=await fetch("titres-volume-2.json");
+const donnees=await reponse.json();
+
+
+donnees.forEach(item=>{
+
+
+let bloc=document.createElement("div");
+bloc.className="qr";
+
+
+let titre=document.createElement("p");
+
+
+let texte=item.titre;
+
+
+texte=texte.replace(/^Volume \d+ - \d+ - /,"");
+
+
+if(texte.startsWith("Son ")){
+
+let son=texte.replace("Son ","");
+
+
+let sons={
+
+"I_Nasal_IN_IM_YM_EIN_AIN_AIM_UN_UM":"[ɛ̃]",
+"I_Nasal_IN_IM_YM_EIN_AIN_AIM_UN_UM":"[ɛ̃]",
+"I Nasal IN IM YM EIN AIN AIM UN UM":"[ɛ̃]",
+
+"EU_OEU":"[ø] / [œ]",
+"EU OEU":"[ø] / [œ]",
+
+"YOD_Y_Voyelle_Voyelle":"[j]",
+"YOD Y Voyelle Voyelle":"[j]",
+
+"YOD_ILL":"[j]",
+"YOD ILL":"[j]",
+
+"YOD_IER":"[j]",
+"YOD IER":"[j]",
+
+"IEN":"[jɛ̃]",
+
+"YOD_AJ_UJ":"[aj] / [uj]",
+"YOD AJ UJ":"[aj] / [uj]",
+
+"YOD_OEJ_EJ":"[œj] / [ɛj]",
+"YOD OEJ EJ":"[œj] / [ɛj]",
+
+"KS_X":"[ks]",
+"KS X":"[ks]",
+
+"GZ_X":"[gz]",
+"GZ X":"[gz]",
+
+"S_X":"[s]",
+"S X":"[s]",
+
+"Z_X":"[z]",
+"Z X":"[z]",
+
+"OM_UM":"[ɔm]",
+"OM UM":"[ɔm]"
+
+};
+
+
+let phon=sons[son] || son;
+
+if(phon.includes("/")){
+    texte="Écoute le son<br><br>"+phon;
+}else{
+    texte="Écoute le son "+phon;
+}
+
+}
+  else if(texte.includes("Activite") || texte.includes("Activité")){
+
+
+let son=texte
+.replace("Activité Entendre Son ","")
+.replace("Activite Entendre Son ","")
+.replace("Activite_Entendre_Son_","")
+.replace("Activite_Entendre_Son ","")
+.trim();
+
+
+let activites={
+
+"I_Nasal":"[ɛ̃]",
+"I Nasal":"[ɛ̃]",
+"I_Nasal_IN_IM_YM_EIN_AIN_AIM_UN_UM":"[ɛ̃]",
+
+"YOD":"[j]",
+
+"KS":"[ks]",
+
+"GZ":"[gz]"
+
+};
+
+
+texte="✏️ Entendre le son "+(activites[son] || son);
+
+
+}
+
+
+
+else if(texte.includes("Syllabes")){
+
+texte="Lis les syllabes";
+
+
+}
+
+
+
+else if(texte.includes("Boîte") || texte.includes("Boite")){
+
+
+let outil=texte
+.replace("Boîte à outils ","")
+.replace("Boite_Outils_","")
+.replace(/_/g," / ");
+
+
+texte="Boîte à outils :<br>"+outil;
+
+
+}
+
+
+
+titre.innerHTML=texte;
+
+
+
+let qrDiv=document.createElement("div");
+qrDiv.className="qrcode";
+
+
+new QRCode(qrDiv,{
+text:item.url,
+width:120,
+height:120
+});
+
+
+let scan=document.createElement("div");
+scan.className="scan";
+scan.innerHTML="Scanne-moi !";
+
+
+bloc.appendChild(titre);
+bloc.appendChild(qrDiv);
+bloc.appendChild(scan);
+
+
+
+listeQR.push({
+
+titre:item.titre,
+element:bloc
+
+});
+
+
+document.getElementById("qrs")
+.appendChild(bloc);
+
+
+});
+
+
+}
+
+
+
+
+async function telechargerZIP(){
+
+
+if(listeQR.length===0){
+
+alert("Créez d'abord les QR codes.");
+
+return;
+
+}
+
+
+let zip=new JSZip();
+
+
+
+for(let qr of listeQR){
+
+
+let canvas=await html2canvas(qr.element);
+
+
+let image=canvas.toDataURL("image/png")
+.split(",")[1];
+
+
+zip.file(
+
+qr.titre.replace(/[^a-z0-9]/gi,"_")+".png",
+
+image,
+
+{base64:true}
+
+);
+
+
+}
+
+
+
+let contenu=await zip.generateAsync({
+
+type:"blob"
+
+});
+
+
+saveAs(contenu,"QR_Languesaki_Volume_4.zip");
+
+
+}
+
+
+</script>
+
+
+</body>
+</html>
